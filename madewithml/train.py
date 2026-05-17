@@ -24,6 +24,8 @@ from madewithml.models import TextClassifier
 from madewithml.utils import set_seeds
 
 # ── Dataset ────────────────────────────────────────────────────────────────────
+
+
 class TextDataset(Dataset):
     def __init__(self, texts, labels, vocab, tokenizer):
         self.texts     = texts

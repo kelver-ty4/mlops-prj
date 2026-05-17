@@ -1,5 +1,6 @@
 # Core ML (CPU-only builds — no NVIDIA packages)
-torch==2.2.2
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2+cpu
 torchtext==0.17.2
 scikit-learn==1.4.0
 numpy==1.26.4

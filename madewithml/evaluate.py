@@ -23,6 +23,7 @@ from madewithml.data import load_data, preprocess, split_data
 from madewithml.models import TextClassifier
 from madewithml.train import TextDataset, collate_batch
 
+
 def evaluate_model(
     experiment_name: str = "mlops_experiment",
     dataset_loc:     str = "data/dataset.csv",

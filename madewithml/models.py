@@ -3,7 +3,6 @@ models.py
 Model architecture definition.
 """
 
-import torch
 import torch.nn as nn
 
 

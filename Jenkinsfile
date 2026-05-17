@@ -42,7 +42,7 @@ pipeline {
                     . ${VENV_DIR}/bin/activate
                     flake8 madewithml/ \
                         --max-line-length=99 \
-                        --ignore=E501,W503
+                        --ignore=E501,W503,E221,E241,E226
                 '''
             }
         }

@@ -27,6 +27,7 @@ app = FastAPI(title="MadeWithML Classifier", version="1.0")
 # ── Load artifacts at startup ──────────────────────────────────────────────────
 ARTIFACT_DIR = Path("/tmp/eval_artifacts")
 
+
 def load_model():
     if not ARTIFACT_DIR.exists():
         raise RuntimeError(f"Artifact directory not found: {ARTIFACT_DIR}")
