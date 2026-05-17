@@ -28,3 +28,4 @@ flake8==7.0.0
 
 # Utilities
 requests==2.31.0
+setuptools
