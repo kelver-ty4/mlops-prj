@@ -123,11 +123,8 @@ EOF
             }
         }
 
-        // ── 7. CD — only runs after merge to main ─
+        // ── 7. CD ──────────────────────────────────
         stage('Build Docker Image') {
-            when {
-                branch 'main'
-            }
             steps {
                 echo '── Building Docker image ──'
                 sh '''
@@ -138,9 +135,6 @@ EOF
         }
 
         stage('Deploy') {
-            when {
-                branch 'main'
-            }
             steps {
                 echo '── Deploying to production ──'
                 sh '''
@@ -156,9 +150,6 @@ EOF
         }
 
         stage('Health Check') {
-            when {
-                branch 'main'
-            }
             steps {
                 echo '── Verifying deployment ──'
                 sh '''
