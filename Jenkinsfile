@@ -30,6 +30,7 @@ pipeline {
                     . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
                     pip install -r requirements.txt
+                    pip install -e .
                 '''
             }
         }
@@ -72,7 +73,7 @@ pipeline {
                     . ${VENV_DIR}/bin/activate
                     python madewithml/train.py \
                         --experiment-name "ci_run_${BUILD_NUMBER}" \
-                        --dataset-loc data/projects.csv \
+                        --dataset-loc data/dataset.csv \
                         --num-epochs 10
                 '''
             }
