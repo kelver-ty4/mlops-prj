@@ -141,8 +141,8 @@ EOF
                     docker stop ${IMAGE_NAME} || true
                     docker rm   ${IMAGE_NAME} || true
                     docker run -d \
+                        --network host \
                         --name ${IMAGE_NAME} \
-                        -p ${APP_PORT}:8000 \
                         -e MODEL_DIR=${MODEL_DIR} \
                         ${IMAGE_NAME}:latest
                 '''
