@@ -15,8 +15,7 @@ pipeline {
     triggers {
         githubPullRequests(
             spec: '',
-            triggerMode: 'HEAVY_HOOKS',
-            events: [Open(), Sync()]
+            triggerMode: 'HEAVY_HOOKS'
         )
     }
 
