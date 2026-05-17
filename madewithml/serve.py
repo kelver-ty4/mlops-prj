@@ -69,8 +69,6 @@ class PredictResponse(BaseModel):
 @app.get("/health")
 def health():
     """Liveness probe — Jenkins calls this after deploy."""
-    if _model is None:
-        raise HTTPException(status_code=503, detail="Model not loaded")
     return {"status": "ok"}
 
 

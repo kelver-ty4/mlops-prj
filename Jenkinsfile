@@ -144,6 +144,7 @@ EOF
                         --network host \
                         --name ${IMAGE_NAME} \
                         -e MODEL_DIR=${MODEL_DIR} \
+                        -v $(pwd)/eval_artifacts:/tmp/eval_artifacts \
                         ${IMAGE_NAME}:latest
                 '''
             }
