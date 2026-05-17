@@ -1,0 +1,374 @@
+INFO 2026-05-17 14:15:20,267 [root:train.py:train_model:94]
+Using device: cpu
+
+INFO 2026-05-17 14:15:20,267 [root:data.py:load_data:23]
+Loading data from data/dataset.csv
+
+INFO 2026-05-17 14:15:20,287 [root:data.py:load_data:25]
+Loaded 764 rows
+
+INFO 2026-05-17 14:15:20,287 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:15:20,310 [root:data.py:preprocess:44]
+After preprocessing: 658 rows
+
+INFO 2026-05-17 14:15:20,321 [root:data.py:split_data:64]
+Split → train=460, val=66, test=132
+
+INFO 2026-05-17 14:19:14,421 [root:train.py:train_model:94]
+Using device: cpu
+
+INFO 2026-05-17 14:19:14,422 [root:data.py:load_data:23]
+Loading data from data/dataset.csv
+
+INFO 2026-05-17 14:19:14,431 [root:data.py:load_data:25]
+Loaded 764 rows
+
+INFO 2026-05-17 14:19:14,432 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:19:14,450 [root:data.py:preprocess:44]
+After preprocessing: 658 rows
+
+INFO 2026-05-17 14:19:14,459 [root:data.py:split_data:64]
+Split → train=460, val=66, test=132
+
+INFO 2026-05-17 14:20:36,879 [root:train.py:train_model:94]
+Using device: cpu
+
+INFO 2026-05-17 14:20:36,880 [root:data.py:load_data:23]
+Loading data from data/dataset.csv
+
+INFO 2026-05-17 14:20:36,890 [root:data.py:load_data:25]
+Loaded 764 rows
+
+INFO 2026-05-17 14:20:36,890 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:20:36,908 [root:data.py:preprocess:44]
+After preprocessing: 658 rows
+
+INFO 2026-05-17 14:20:36,916 [root:data.py:split_data:64]
+Split → train=460, val=66, test=132
+
+INFO 2026-05-17 14:20:38,531 [root:train.py:train_model:158]
+Epoch 01/10 | train_loss=1.0065 train_acc=0.4761 | val_loss=0.9150 val_acc=0.5000
+
+INFO 2026-05-17 14:20:38,594 [root:train.py:train_model:158]
+Epoch 02/10 | train_loss=0.8087 train_acc=0.6957 | val_loss=0.8794 val_acc=0.5606
+
+INFO 2026-05-17 14:20:38,652 [root:train.py:train_model:158]
+Epoch 03/10 | train_loss=0.5868 train_acc=0.8217 | val_loss=0.7628 val_acc=0.6364
+
+INFO 2026-05-17 14:20:38,708 [root:train.py:train_model:158]
+Epoch 04/10 | train_loss=0.4055 train_acc=0.8870 | val_loss=0.6795 val_acc=0.7121
+
+INFO 2026-05-17 14:20:38,757 [root:train.py:train_model:158]
+Epoch 05/10 | train_loss=0.2635 train_acc=0.9304 | val_loss=0.6117 val_acc=0.7576
+
+INFO 2026-05-17 14:20:38,806 [root:train.py:train_model:158]
+Epoch 06/10 | train_loss=0.1665 train_acc=0.9674 | val_loss=0.5953 val_acc=0.7576
+
+INFO 2026-05-17 14:20:38,853 [root:train.py:train_model:158]
+Epoch 07/10 | train_loss=0.1045 train_acc=0.9783 | val_loss=0.5424 val_acc=0.7576
+
+INFO 2026-05-17 14:20:38,899 [root:train.py:train_model:158]
+Epoch 08/10 | train_loss=0.0595 train_acc=0.9935 | val_loss=0.5212 val_acc=0.7727
+
+INFO 2026-05-17 14:20:38,944 [root:train.py:train_model:158]
+Epoch 09/10 | train_loss=0.0442 train_acc=1.0000 | val_loss=0.5270 val_acc=0.7727
+
+INFO 2026-05-17 14:20:38,986 [root:train.py:train_model:158]
+Epoch 10/10 | train_loss=0.0381 train_acc=0.9978 | val_loss=0.5117 val_acc=0.7727
+
+INFO 2026-05-17 14:20:42,611 [root:train.py:train_model:184]
+MLflow run_id: db2c7264eca243a09bf54d8f08d30ff6
+
+INFO 2026-05-17 14:20:42,612 [root:train.py:train_model:186]
+✅ Training complete!
+
+INFO 2026-05-17 14:21:29,569 [root:evaluate.py:evaluate_model:37]
+Evaluating run_id: db2c7264eca243a09bf54d8f08d30ff6
+
+INFO 2026-05-17 14:21:29,779 [root:data.py:load_data:23]
+Loading data from data/projects.csv
+
+INFO 2026-05-17 14:21:29,788 [root:data.py:load_data:25]
+Loaded 764 rows
+
+INFO 2026-05-17 14:21:29,789 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:23:54,132 [root:evaluate.py:evaluate_model:37]
+Evaluating run_id: db2c7264eca243a09bf54d8f08d30ff6
+
+INFO 2026-05-17 14:23:54,341 [root:data.py:load_data:23]
+Loading data from data/projects.csv
+
+INFO 2026-05-17 14:23:54,350 [root:data.py:load_data:25]
+Loaded 764 rows
+
+INFO 2026-05-17 14:23:54,351 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:25:48,777 [root:evaluate.py:evaluate_model:37]
+Evaluating run_id: db2c7264eca243a09bf54d8f08d30ff6
+
+INFO 2026-05-17 14:25:48,985 [root:data.py:load_data:23]
+Loading data from data/dataset.csv
+
+INFO 2026-05-17 14:25:48,995 [root:data.py:load_data:25]
+Loaded 764 rows
+
+INFO 2026-05-17 14:25:48,995 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:25:49,013 [root:data.py:preprocess:44]
+After preprocessing: 658 rows
+
+INFO 2026-05-17 14:25:49,021 [root:data.py:split_data:64]
+Split → train=460, val=66, test=132
+
+INFO 2026-05-17 14:25:49,058 [root:evaluate.py:evaluate_model:86]
+
+                             precision    recall  f1-score   support
+
+            computer-vision       0.96      0.79      0.87        57
+                      mlops       0.75      0.46      0.57        13
+natural-language-processing       0.77      0.95      0.85        62
+
+                   accuracy                           0.83       132
+                  macro avg       0.82      0.73      0.76       132
+               weighted avg       0.85      0.83      0.83       132
+
+
+INFO 2026-05-17 14:25:49,058 [root:evaluate.py:evaluate_model:87]
+Weighted F1: 0.8287
+
+INFO 2026-05-17 14:25:49,059 [root:evaluate.py:evaluate_model:92]
+✅ metrics.json written
+
+INFO 2026-05-17 14:25:49,084 [root:evaluate.py:evaluate_model:99]
+✅ Evaluation complete!
+
+INFO 2026-05-17 14:27:33,748 [root:main.py:run_pipeline:21]
+═══════════════════════════════════════
+
+INFO 2026-05-17 14:27:33,749 [root:main.py:run_pipeline:22]
+ MLOps Pipeline Starting
+
+INFO 2026-05-17 14:27:33,749 [root:main.py:run_pipeline:23]
+═══════════════════════════════════════
+
+INFO 2026-05-17 14:27:33,749 [root:main.py:run_pipeline:25]
+Step 1/2 — Training ...
+
+INFO 2026-05-17 14:29:13,075 [root:main.py:run_pipeline:21]
+═══════════════════════════════════════
+
+INFO 2026-05-17 14:29:13,075 [root:main.py:run_pipeline:22]
+ MLOps Pipeline Starting
+
+INFO 2026-05-17 14:29:13,075 [root:main.py:run_pipeline:23]
+═══════════════════════════════════════
+
+INFO 2026-05-17 14:29:13,075 [root:main.py:run_pipeline:25]
+Step 1/2 — Training ...
+
+INFO 2026-05-17 14:29:13,077 [root:train.py:train_model:93]
+Using device: cpu
+
+INFO 2026-05-17 14:29:13,077 [root:data.py:load_data:23]
+Loading data from data/dataset.csv
+
+INFO 2026-05-17 14:29:13,088 [root:data.py:load_data:25]
+Loaded 764 rows
+
+INFO 2026-05-17 14:29:13,088 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:29:13,106 [root:data.py:preprocess:44]
+After preprocessing: 658 rows
+
+INFO 2026-05-17 14:29:13,115 [root:data.py:split_data:64]
+Split → train=460, val=66, test=132
+
+INFO 2026-05-17 14:29:14,734 [root:train.py:train_model:157]
+Epoch 01/10 | train_loss=1.0065 train_acc=0.4761 | val_loss=0.9150 val_acc=0.5000
+
+INFO 2026-05-17 14:29:14,801 [root:train.py:train_model:157]
+Epoch 02/10 | train_loss=0.8087 train_acc=0.6957 | val_loss=0.8794 val_acc=0.5606
+
+INFO 2026-05-17 14:29:14,872 [root:train.py:train_model:157]
+Epoch 03/10 | train_loss=0.5868 train_acc=0.8217 | val_loss=0.7628 val_acc=0.6364
+
+INFO 2026-05-17 14:29:14,934 [root:train.py:train_model:157]
+Epoch 04/10 | train_loss=0.4055 train_acc=0.8870 | val_loss=0.6795 val_acc=0.7121
+
+INFO 2026-05-17 14:29:14,998 [root:train.py:train_model:157]
+Epoch 05/10 | train_loss=0.2635 train_acc=0.9304 | val_loss=0.6117 val_acc=0.7576
+
+INFO 2026-05-17 14:29:15,053 [root:train.py:train_model:157]
+Epoch 06/10 | train_loss=0.1665 train_acc=0.9674 | val_loss=0.5953 val_acc=0.7576
+
+INFO 2026-05-17 14:29:15,106 [root:train.py:train_model:157]
+Epoch 07/10 | train_loss=0.1045 train_acc=0.9783 | val_loss=0.5424 val_acc=0.7576
+
+INFO 2026-05-17 14:29:15,159 [root:train.py:train_model:157]
+Epoch 08/10 | train_loss=0.0595 train_acc=0.9935 | val_loss=0.5212 val_acc=0.7727
+
+INFO 2026-05-17 14:29:15,209 [root:train.py:train_model:157]
+Epoch 09/10 | train_loss=0.0442 train_acc=1.0000 | val_loss=0.5270 val_acc=0.7727
+
+INFO 2026-05-17 14:29:15,256 [root:train.py:train_model:157]
+Epoch 10/10 | train_loss=0.0381 train_acc=0.9978 | val_loss=0.5117 val_acc=0.7727
+
+INFO 2026-05-17 14:29:19,054 [root:train.py:train_model:183]
+MLflow run_id: d65f50e623ad449c99a220be04089ec1
+
+INFO 2026-05-17 14:29:19,055 [root:train.py:train_model:185]
+✅ Training complete!
+
+INFO 2026-05-17 14:29:19,064 [root:main.py:run_pipeline:32]
+Step 2/2 — Evaluation ...
+
+INFO 2026-05-17 14:29:19,064 [root:evaluate.py:evaluate_model:36]
+Evaluating run_id: d65f50e623ad449c99a220be04089ec1
+
+INFO 2026-05-17 14:29:19,137 [root:data.py:load_data:23]
+Loading data from data/dataset.csv
+
+INFO 2026-05-17 14:29:19,141 [root:data.py:load_data:25]
+Loaded 764 rows
+
+INFO 2026-05-17 14:29:19,141 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:29:19,148 [root:data.py:preprocess:44]
+After preprocessing: 658 rows
+
+INFO 2026-05-17 14:29:19,151 [root:data.py:split_data:64]
+Split → train=460, val=66, test=132
+
+INFO 2026-05-17 14:29:19,162 [root:evaluate.py:evaluate_model:85]
+
+                             precision    recall  f1-score   support
+
+            computer-vision       0.96      0.79      0.87        57
+                      mlops       0.75      0.46      0.57        13
+natural-language-processing       0.77      0.95      0.85        62
+
+                   accuracy                           0.83       132
+                  macro avg       0.82      0.73      0.76       132
+               weighted avg       0.85      0.83      0.83       132
+
+
+INFO 2026-05-17 14:29:19,162 [root:evaluate.py:evaluate_model:86]
+Weighted F1: 0.8287
+
+INFO 2026-05-17 14:29:19,163 [root:evaluate.py:evaluate_model:91]
+✅ metrics.json written
+
+INFO 2026-05-17 14:29:19,169 [root:evaluate.py:evaluate_model:98]
+✅ Evaluation complete!
+
+INFO 2026-05-17 14:29:19,177 [root:main.py:run_pipeline:38]
+═══════════════════════════════════════
+
+INFO 2026-05-17 14:29:19,177 [root:main.py:run_pipeline:39]
+ Pipeline Complete ✅
+
+INFO 2026-05-17 14:29:19,177 [root:main.py:run_pipeline:40]
+═══════════════════════════════════════
+
+INFO 2026-05-17 14:37:25,754 [root:predict.py:predict:49]
+Prediction: natural-language-processing
+
+INFO 2026-05-17 14:37:25,754 [root:predict.py:predict:51]
+  computer-vision: 0.0000
+
+INFO 2026-05-17 14:37:25,754 [root:predict.py:predict:51]
+  mlops: 0.0000
+
+INFO 2026-05-17 14:37:25,754 [root:predict.py:predict:51]
+  natural-language-processing: 1.0000
+
+INFO 2026-05-17 14:40:18,212 [root:serve.py:<module>:51]
+✅ Model loaded successfully
+
+INFO 2026-05-17 14:40:18,328 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+
+INFO 2026-05-17 14:40:18,344 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+
+INFO 2026-05-17 14:40:18,489 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+
+INFO 2026-05-17 14:40:18,495 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+
+INFO 2026-05-17 14:40:18,501 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+
+INFO 2026-05-17 14:40:18,506 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 422 Unprocessable Entity"
+
+INFO 2026-05-17 14:40:18,513 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:40:18,516 [root:data.py:preprocess:44]
+After preprocessing: 39 rows
+
+INFO 2026-05-17 14:40:18,518 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:40:18,520 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-17 14:40:18,522 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:40:18,524 [root:data.py:preprocess:44]
+After preprocessing: 1 rows
+
+INFO 2026-05-17 14:40:18,525 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:40:18,527 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-17 14:40:18,528 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:40:18,530 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-17 14:40:18,533 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-17 14:40:18,535 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:40:18,537 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-17 14:40:18,540 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-17 14:40:18,541 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-17 14:40:18,543 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-17 14:40:18,546 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-17 14:40:18,548 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-17 14:43:24,451 [root:serve.py:<module>:51]
+✅ Model loaded successfully
+

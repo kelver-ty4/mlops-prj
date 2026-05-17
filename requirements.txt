@@ -1,0 +1,29 @@
+# Core ML (CPU-only builds — no NVIDIA packages)
+torch==2.2.2
+torchtext==0.17.2
+scikit-learn==1.4.0
+numpy==1.26.4
+pandas==2.2.0
+
+# Experiment tracking
+mlflow==2.10.0
+
+# API
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic==2.6.0
+
+# CLI
+typer==0.9.0
+
+# Monitoring
+evidently==0.4.16
+
+# Testing & linting
+pytest==8.0.0
+pytest-cov==4.1.0
+httpx==0.26.0       # needed by FastAPI TestClient
+flake8==7.0.0
+
+# Utilities
+requests==2.31.0
