@@ -90,7 +90,7 @@ pipeline {
                     . ${VENV_DIR}/bin/activate
                     python madewithml/evaluate.py \
                         --experiment-name "ci_run_${BUILD_NUMBER}" \
-                        --dataset-loc data/projects.csv
+                        --dataset-loc data/dataset.csv
                 '''
             }
         }

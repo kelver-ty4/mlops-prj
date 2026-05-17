@@ -38,7 +38,7 @@ def evaluate_model(
 
     mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
     client      = mlflow.tracking.MlflowClient()
-    artifact_dir = client.download_artifacts(run_id, ".", dst_path="/tmp/eval_artifacts")
+    artifact_dir = client.download_artifacts(run_id, ".", dst_path=str(Path("eval_artifacts").absolute()))
 
     with open(f"{artifact_dir}/vocab.pkl", "rb") as f:
         vocab = pickle.load(f)
