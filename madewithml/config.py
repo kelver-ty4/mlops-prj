@@ -6,6 +6,7 @@ All other scripts import from here.
 
 import logging
 import logging.config
+import os
 import sys
 from pathlib import Path
 
@@ -20,7 +21,7 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 # ── MLflow ─────────────────────────────────────────────────────────────────────
 import mlflow
 
-MODEL_REGISTRY    = Path("/tmp/mlflow")
+MODEL_REGISTRY    = Path(os.getenv("MODEL_DIR", "/tmp/mlflow"))
 MODEL_REGISTRY.mkdir(parents=True, exist_ok=True)
 MLFLOW_TRACKING_URI = "file://" + str(MODEL_REGISTRY.absolute())
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)

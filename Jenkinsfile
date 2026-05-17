@@ -4,7 +4,7 @@ pipeline {
     environment {
         PYTHON     = 'python3'
         VENV_DIR   = '.venv'
-        MODEL_DIR  = '/tmp/mlflow'
+        MODEL_DIR  = "${WORKSPACE}/mlflow"
         APP_PORT   = '8000'
         IMAGE_NAME = 'mlops-app'
     }
