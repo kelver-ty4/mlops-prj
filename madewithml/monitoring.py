@@ -25,7 +25,7 @@ from evidently.metric_preset import (
 )
 from evidently.metrics import (
     DatasetDriftMetric,
-    DatasetMissingValuesSummaryMetric,
+    DatasetMissingValuesMetric,
 )
 
 from madewithml.config import logger
@@ -63,7 +63,7 @@ def run_monitoring(
         DataQualityPreset(),
         TargetDriftPreset(),
         DatasetDriftMetric(),
-        DatasetMissingValuesSummaryMetric(),
+        DatasetMissingValuesMetric(),
     ])
 
     report.run(reference_data=reference, current_data=current)

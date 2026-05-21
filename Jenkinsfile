@@ -160,6 +160,29 @@ EOF
                 '''
             }
         }
+
+        stage('Monitor') {
+            steps {
+                echo '── Running drift monitoring ──'
+                sh '''
+                    . ${VENV_DIR}/bin/activate
+                    python -c "
+import pandas as pd
+df = pd.read_csv('data/projects.csv').sample(200, random_state=\$(date +%s))
+df.to_csv('data/current_window.csv', index=False)
+"
+                    python madewithml/monitoring.py \
+                        --reference-loc data/projects.csv \
+                        --current-loc data/current_window.csv \
+                        --report-dir reports/
+                '''
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'reports/*.html, reports/*.json'
+                }
+            }
+        }
     }
 
     // ─────────────────────────────────────────────
