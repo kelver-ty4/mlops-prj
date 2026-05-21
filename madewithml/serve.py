@@ -217,7 +217,7 @@ def home():
         <h3>API Docs</h3>
         <p>Swagger documentation for all API endpoints.</p>
       </a>
-      <a href="https://github.com/Goku-kun/mlops-project" class="home-card">
+      <a href="https://github.com/kelver-ty4/mlops-prj" class="home-card">
         <div class="icon">📦</div>
         <h3>Source Code</h3>
         <p>GitHub repository with CI/CD pipeline and ML code.</p>
