@@ -428,6 +428,7 @@ setInterval(refresh, 30000);
 # ── Monitoring routes ─────────────────────────────────────────────────────────
 @app.get("/monitor")
 def monitor_page():
+    from fastapi.responses import HTMLResponse
     return HTMLResponse(MONITOR_HTML)
 
 
