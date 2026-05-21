@@ -36,12 +36,13 @@ ALERT_THRESHOLD = 0.05          # p-value; below this → drift detected
 def load_and_prepare(path: str, text_col: str = "text", label_col: str = "tag") -> pd.DataFrame:
     df = pd.read_csv(path)
     if text_col not in df.columns:
-        # derive text column the same way data.py does
         df["text"] = df["title"].fillna("") + " " + df["description"].fillna("")
     if label_col not in df.columns:
         df[label_col] = None
     df["text_length"] = df["text"].str.split().str.len()
-    return df[["text", label_col, "text_length"]]
+    result = df[["text", label_col, "text_length"]]
+    # drop columns that are entirely NaN (e.g. missing label column)
+    return result.dropna(axis=1, how="all")
 
 
 def run_monitoring(
@@ -55,6 +56,11 @@ def run_monitoring(
     logger.info("Loading reference and current datasets ...")
     reference = load_and_prepare(reference_loc)
     current   = load_and_prepare(current_loc)
+
+    # align columns — only keep columns present in both datasets
+    common_cols = list(set(reference.columns) & set(current.columns))
+    reference = reference[common_cols]
+    current   = current[common_cols]
 
     # ── EvidentlyAI Report ────────────────────────────────────────────────────
     logger.info("Running EvidentlyAI drift report ...")

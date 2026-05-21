@@ -435,7 +435,7 @@ def monitor_page():
 @app.get("/monitor/status")
 def monitor_status():
     drift = run_monitoring(
-        reference_loc="data/projects.csv",
+        reference_loc="data/dataset.csv",
         current_loc="data/projects.csv",
         report_dir="reports/",
     )
