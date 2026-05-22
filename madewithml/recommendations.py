@@ -2,7 +2,6 @@
 recommendations.py
 Generate actionable recommendations based on drift & anomaly results.
 """
-from madewithml.config import logger
 
 
 DRIFT_RECOMMENDATIONS = {

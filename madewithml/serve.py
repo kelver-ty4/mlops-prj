@@ -23,7 +23,6 @@ from torchtext.data.utils import get_tokenizer
 from madewithml.config import logger
 from madewithml.models import TextClassifier
 from datetime import datetime, timezone
-from fastapi.staticfiles import StaticFiles
 from madewithml.anomaly_detection import run_anomaly_detection
 from madewithml.recommendations import generate_recommendations
 from madewithml.monitoring import run_monitoring, ALERT_THRESHOLD
@@ -176,11 +175,11 @@ UI_FOOT = '''
 
 def page(title, body, home_active="", predict_active="", monitor_active=""):
     from fastapi.responses import HTMLResponse
-    html = UI_HEAD.replace("{title}", title) \
-                  .replace("{home_active}", home_active) \
-                  .replace("{predict_active}", predict_active) \
-                  .replace("{monitor_active}", monitor_active) \
-            + body + UI_FOOT
+    html = (UI_HEAD.replace("{title}", title)
+                   .replace("{home_active}", home_active)
+                   .replace("{predict_active}", predict_active)
+                   .replace("{monitor_active}", monitor_active)
+            + body + UI_FOOT)
     return HTMLResponse(html)
 
 
@@ -482,7 +481,6 @@ def monitor_status():
 
 @app.get("/monitor/history")
 def monitor_history():
-    import glob
     reports_dir = Path("reports/")
     if not reports_dir.exists():
         return {"reports": []}

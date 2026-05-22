@@ -8,7 +8,6 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from collections import Counter
 import numpy as np
-from madewithml.config import logger
 
 
 def load_predictions(pred_file="data/predictions.jsonl", max_records=200):
@@ -17,7 +16,7 @@ def load_predictions(pred_file="data/predictions.jsonl", max_records=200):
         return []
     with open(path) as f:
         lines = f.readlines()
-    return [json.loads(l) for l in lines[-max_records:]]
+    return [json.loads(line) for line in lines[-max_records:]]
 
 
 def detect_confidence_anomalies(records, z_threshold=2.0):
