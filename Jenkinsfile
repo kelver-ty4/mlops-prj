@@ -154,9 +154,11 @@ EOF
             steps {
                 echo '── Verifying deployment ──'
                 sh '''
-                    sleep 5
-                    curl --fail http://localhost:${APP_PORT}/health \
-                        || (echo "Health check failed" && exit 1)
+                    for i in $(seq 1 10); do
+                        curl --fail http://localhost:${APP_PORT}/health && exit 0
+                        sleep 3
+                    done
+                    echo "Health check failed after 30s" && exit 1
                 '''
             }
         }
