@@ -1,0 +1,9 @@
+ERROR 2026-05-21 21:02:14,378 [root:serve.py:<module>:60]
+Could not load model: [Errno 2] No such file or directory: '/tmp/eval_artifacts/vocab.pkl'
+
+ERROR 2026-05-21 21:02:35,178 [root:serve.py:<module>:60]
+Could not load model: [Errno 2] No such file or directory: '/tmp/eval_artifacts/vocab.pkl'
+
+ERROR 2026-05-21 21:15:45,176 [root:serve.py:<module>:60]
+Could not load model: [Errno 2] No such file or directory: '/tmp/eval_artifacts/vocab.pkl'
+

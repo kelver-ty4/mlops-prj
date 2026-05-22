@@ -372,3 +372,306 @@ Split → train=28, val=4, test=8
 INFO 2026-05-17 14:43:24,451 [root:serve.py:<module>:51]
 ✅ Model loaded successfully
 
+INFO 2026-05-21 21:01:47,015 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:01:47,018 [root:data.py:preprocess:44]
+After preprocessing: 39 rows
+
+INFO 2026-05-21 21:01:47,019 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:01:47,021 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:01:47,022 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:01:47,024 [root:data.py:preprocess:44]
+After preprocessing: 1 rows
+
+INFO 2026-05-21 21:01:47,025 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:01:47,027 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:01:47,029 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:01:47,031 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:01:47,034 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:01:47,035 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:01:47,037 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:01:47,039 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:01:47,040 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:01:47,042 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:01:47,044 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:01:47,046 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+ERROR 2026-05-21 21:02:14,378 [root:serve.py:<module>:60]
+Could not load model: [Errno 2] No such file or directory: '/tmp/eval_artifacts/vocab.pkl'
+
+INFO 2026-05-21 21:02:14,721 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:14,724 [root:data.py:preprocess:44]
+After preprocessing: 39 rows
+
+INFO 2026-05-21 21:02:14,726 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:14,728 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:14,730 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:14,731 [root:data.py:preprocess:44]
+After preprocessing: 1 rows
+
+INFO 2026-05-21 21:02:14,733 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:14,735 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:14,736 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:14,739 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:14,742 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:02:14,744 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:14,746 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:14,749 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:02:14,750 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:14,752 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:14,754 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:02:14,756 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+ERROR 2026-05-21 21:02:35,178 [root:serve.py:<module>:60]
+Could not load model: [Errno 2] No such file or directory: '/tmp/eval_artifacts/vocab.pkl'
+
+INFO 2026-05-21 21:02:35,284 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:02:35,297 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:02:35,305 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:02:35,311 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:02:35,318 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:02:35,323 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 422 Unprocessable Entity"
+
+INFO 2026-05-21 21:02:35,329 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:35,333 [root:data.py:preprocess:44]
+After preprocessing: 39 rows
+
+INFO 2026-05-21 21:02:35,335 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:35,338 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:35,340 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:35,341 [root:data.py:preprocess:44]
+After preprocessing: 1 rows
+
+INFO 2026-05-21 21:02:35,343 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:35,345 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:35,346 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:35,348 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:35,352 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:02:35,354 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:35,356 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:35,358 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:02:35,360 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:02:35,362 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:02:35,365 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:02:35,367 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+ERROR 2026-05-21 21:15:45,176 [root:serve.py:<module>:60]
+Could not load model: [Errno 2] No such file or directory: '/tmp/eval_artifacts/vocab.pkl'
+
+INFO 2026-05-21 21:15:45,258 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:15:45,269 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:15:45,275 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:15:45,278 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:15:45,283 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+
+INFO 2026-05-21 21:15:45,286 [httpx:_client.py:_send_single_request:1027]
+HTTP Request: POST http://testserver/predict "HTTP/1.1 422 Unprocessable Entity"
+
+INFO 2026-05-21 21:15:45,290 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:15:45,292 [root:data.py:preprocess:44]
+After preprocessing: 39 rows
+
+INFO 2026-05-21 21:15:45,294 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:15:45,295 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:15:45,296 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:15:45,298 [root:data.py:preprocess:44]
+After preprocessing: 1 rows
+
+INFO 2026-05-21 21:15:45,299 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:15:45,300 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:15:45,302 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:15:45,303 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:15:45,305 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:15:45,307 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:15:45,308 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:15:45,310 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:15:45,311 [root:data.py:preprocess:39]
+Preprocessing data ...
+
+INFO 2026-05-21 21:15:45,312 [root:data.py:preprocess:44]
+After preprocessing: 40 rows
+
+INFO 2026-05-21 21:15:45,314 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-21 21:15:45,315 [root:data.py:split_data:64]
+Split → train=28, val=4, test=8
+
+INFO 2026-05-22 18:28:52,715 [root:monitoring.py:run_monitoring:56]
+Loading reference and current datasets ...
+
+INFO 2026-05-22 18:28:52,730 [root:monitoring.py:run_monitoring:66]
+Running EvidentlyAI drift report ...
+
+INFO 2026-05-22 18:28:53,596 [root:monitoring.py:run_monitoring:80]
+HTML report saved → reports/drift_report_20260522_182852.html
+
+INFO 2026-05-22 18:28:53,603 [root:monitoring.py:run_monitoring:100]
+Summary saved → reports/drift_summary_20260522_182852.json
+
+INFO 2026-05-22 18:28:53,603 [root:monitoring.py:run_monitoring:114]
+✅ No significant drift | share_drifted_cols=0.00% | timestamp=20260522_182852
+
+INFO 2026-05-22 18:29:44,832 [root:monitoring.py:run_monitoring:56]
+Loading reference and current datasets ...
+
+INFO 2026-05-22 18:29:44,852 [root:monitoring.py:run_monitoring:66]
+Running EvidentlyAI drift report ...
+
+INFO 2026-05-22 18:29:46,160 [root:monitoring.py:run_monitoring:80]
+HTML report saved → reports/drift_report_20260522_182944.html
+
+INFO 2026-05-22 18:29:46,168 [root:monitoring.py:run_monitoring:106]
+Summary saved → reports/drift_summary_20260522_182944.json
+
+WARNING 2026-05-22 18:29:46,168 [root:monitoring.py:run_monitoring:110]
+🚨 DRIFT DETECTED | share_drifted_cols=100.00% | timestamp=20260522_182944
+
+WARNING 2026-05-22 18:29:46,168 [root:monitoring.py:run_monitoring:115]
+Recommended actions:
+
+WARNING 2026-05-22 18:29:46,168 [root:monitoring.py:run_monitoring:116]
+  1. Inspect the drift report HTML
+
+WARNING 2026-05-22 18:29:46,168 [root:monitoring.py:run_monitoring:117]
+  2. Check for data schema changes
+
+WARNING 2026-05-22 18:29:46,168 [root:monitoring.py:run_monitoring:118]
+  3. Trigger retraining pipeline (push to main)
+

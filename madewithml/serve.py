@@ -11,6 +11,7 @@ Endpoints:
 """
 
 import json
+import pandas as pd
 import pickle
 from pathlib import Path
 
@@ -25,7 +26,7 @@ from datetime import datetime, timezone
 from fastapi.staticfiles import StaticFiles
 from madewithml.anomaly_detection import run_anomaly_detection
 from madewithml.recommendations import generate_recommendations
-from madewithml.monitoring import run_monitoring
+from madewithml.monitoring import run_monitoring, ALERT_THRESHOLD
 
 app = FastAPI(title="MadeWithML Classifier", version="1.0")
 
@@ -432,13 +433,44 @@ def monitor_page():
     return HTMLResponse(MONITOR_HTML)
 
 
+def predictions_to_current_window(
+    pred_file: str = "data/predictions.jsonl",
+    output: str = "data/current_window.csv",
+):
+    """Convert prediction log to current window CSV for drift comparison."""
+    records = []
+    pred_path = Path(pred_file)
+    if pred_path.exists():
+        with open(pred_path) as f:
+            for line in f:
+                if line.strip():
+                    records.append(json.loads(line))
+    if not records:
+        return
+    df = pd.DataFrame(records)[["text", "label"]].rename(columns={"label": "tag"})
+    df.to_csv(output, index=False)
+
+
 @app.get("/monitor/status")
 def monitor_status():
-    drift = run_monitoring(
-        reference_loc="data/dataset.csv",
-        current_loc="data/projects.csv",
-        report_dir="reports/",
-    )
+    predictions_to_current_window()
+    current_loc = "data/current_window.csv"
+    if Path(current_loc).exists() and Path(current_loc).stat().st_size > 20:
+        drift = run_monitoring(
+            reference_loc="data/dataset.csv",
+            current_loc=current_loc,
+            report_dir="reports/",
+        )
+    else:
+        drift = {
+            "timestamp": datetime.now().strftime("%Y%m%d_%H%M%S"),
+            "dataset_drift": False,
+            "share_drifted_cols": 0,
+            "num_drifted_columns": 0,
+            "num_columns": 0,
+            "alert_threshold": ALERT_THRESHOLD,
+            "message": "No prediction data yet. Send some requests to /predict first.",
+        }
     anomalies = run_anomaly_detection()
     recommendations = generate_recommendations(drift, anomalies)
     return {

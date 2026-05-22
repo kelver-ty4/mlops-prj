@@ -62,6 +62,17 @@ def run_monitoring(
     reference = reference[common_cols]
     current   = current[common_cols]
 
+    if len(current) == 0:
+        logger.warning("Current dataset is empty — skipping drift report")
+        return {
+            "timestamp":           datetime.now().strftime("%Y%m%d_%H%M%S"),
+            "dataset_drift":       False,
+            "share_drifted_cols":  0,
+            "num_drifted_columns": 0,
+            "num_columns":         0,
+            "alert_threshold":     ALERT_THRESHOLD,
+        }
+
     # ── EvidentlyAI Report ────────────────────────────────────────────────────
     logger.info("Running EvidentlyAI drift report ...")
     report = Report(metrics=[
@@ -81,7 +92,13 @@ def run_monitoring(
 
     # ── Extract JSON results for alerting ────────────────────────────────────
     result     = report.as_dict()
-    drift_info = result["metrics"][3]["result"]   # DatasetDriftMetric
+    # Find DatasetDriftMetric by searching for the key "dataset_drift"
+    drift_info = {}
+    for m in result["metrics"]:
+        r = m.get("result", {})
+        if "dataset_drift" in r and "number_of_columns" in r:
+            drift_info = r
+            break
 
     share_drifted = drift_info.get("share_of_drifted_columns", 0)
     dataset_drifted = drift_info.get("dataset_drift", False)

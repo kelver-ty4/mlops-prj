@@ -1,6 +1,7 @@
 README.md
 setup.py
 madewithml/__init__.py
+madewithml/anomaly_detection.py
 madewithml/config.py
 madewithml/data.py
 madewithml/evaluate.py
@@ -8,6 +9,7 @@ madewithml/main.py
 madewithml/models.py
 madewithml/monitoring.py
 madewithml/predict.py
+madewithml/recommendations.py
 madewithml/serve.py
 madewithml/train.py
 madewithml/utils.py
